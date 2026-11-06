@@ -1,0 +1,27 @@
+name: projet1
+services:
+  server:
+    build: .
+    ports:
+      - 80:80
+      - 443:443
+      - 5173:5173
+    volumes:
+      - ./:/var/www/html
+    depends_on:
+      - mariadb
+  mariadb:
+    image: mariadb:10.11.2
+    container_name: mariadb-projet1
+    environment:
+      MARIADB_ROOT_PASSWORD: root
+      MARIADB_DATABASE: addressed
+      MARIADB_USER: addressed
+      MARIADB_PASSWORD: root
+    ports:
+      - "3306:3306"
+    volumes:
+      - ../docker-config/data:/var/lib/mysql
+
+volumes:
+  mariadb_data:
