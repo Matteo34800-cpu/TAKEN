@@ -1,1 +1,6 @@
-
+.calendrier-ui {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 16px;
+}

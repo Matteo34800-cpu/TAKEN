@@ -1,1 +1,20 @@
+.calendrier-reservation-ressources {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  border: 1px solid #d1d5db;
+}
+
+.ligneNomRessource {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    min-height: 42px;
+    border: 1px solid #d1d5db;
+    box-sizing: border-box;
+    font-weight: 600;
+    background: #f3f4f6;
+}
+
 

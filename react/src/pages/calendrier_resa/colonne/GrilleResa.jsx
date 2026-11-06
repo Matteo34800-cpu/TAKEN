@@ -7,7 +7,7 @@ function GrilleResa() {
         <>
             <div className="ListeResa">
                 <AxeTemp/>
-                <AxeRessource/>
+                <AxeRessource name={"Test"}/>
 
             </div>
         </>

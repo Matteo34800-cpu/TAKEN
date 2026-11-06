@@ -1,0 +1,18 @@
+
+.ligneResa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    min-height: 42px;
+    border: 1px solid #d1d5db;
+    box-sizing: border-box;
+    background: #fff;
+}
+.ligneResa.vert {
+    background: #dcfce7;
+}
+
+.ligneResa.rouge {
+    background: #fecaca;
+}
